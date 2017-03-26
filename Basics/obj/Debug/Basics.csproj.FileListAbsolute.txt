@@ -1,0 +1,6 @@
+C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\Basics.csprojResolveAssemblyReference.cache
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.exe.config
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.exe
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.pdb
+C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\LINQ.exe
+C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\LINQ.pdb
