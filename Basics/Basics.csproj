@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8F6A27AE-8E14-4E30-B19E-3BFC0D06C881}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LINQ</RootNamespace>
-    <AssemblyName>LINQ</AssemblyName>
+    <RootNamespace>Basics</RootNamespace>
+    <AssemblyName>Basics</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

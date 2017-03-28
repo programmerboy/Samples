@@ -1,6 +1,12 @@
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\obj\Debug\Basics.csprojResolveAssemblyReference.cache
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\bin\Debug\Basics.exe.config
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\bin\Debug\Basics.exe
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\bin\Debug\Basics.pdb
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\obj\Debug\Basics.exe
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\Basics\obj\Debug\Basics.pdb
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\Basics.exe.config
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\Basics.exe
+C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\Basics.pdb
 C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\Basics.csprojResolveAssemblyReference.cache
-C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.exe.config
-C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.exe
-C:\Users\omair\Documents\GitHub\Samples\Basics\bin\Debug\LINQ.pdb
-C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\LINQ.exe
-C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\LINQ.pdb
+C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\Basics.exe
+C:\Users\omair\Documents\GitHub\Samples\Basics\obj\Debug\Basics.pdb

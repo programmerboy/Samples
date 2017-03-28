@@ -1,0 +1,10 @@
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\bin\JavaScript.dll
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\bin\JavaScript.pdb
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\obj\Debug\HTML.csprojResolveAssemblyReference.cache
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\obj\Debug\JavaScript.dll
+C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\obj\Debug\JavaScript.pdb
+C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.dll.config
+C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.dll
+C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.pdb
+C:\Users\omair\Documents\GitHub\Samples\HTML\obj\Debug\JavaScript.dll
+C:\Users\omair\Documents\GitHub\Samples\HTML\obj\Debug\JavaScript.pdb

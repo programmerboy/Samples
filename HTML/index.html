@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+
+    <!-- Libraries -->
+    <script src="/libraries/jquery-3.1.1.min.js"></script>
+    <script src="/libraries/angular/angular.min.js"></script>
+    <script src="/libraries/angular/angular-sanitize.min.js"></script>
+    <script src="/libraries/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <link href="/content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="/content/custom-styles.css" rel="stylesheet" />
+    <script src="/angular/app.js"></script>
+    <script src="/angular/common.functions.js"></script>
+    <script src="/angular/my-directives.js"></script>
+    <script src="/angular/commonNgFunctionsCtrl.js"></script>
+    <script src="/sampleCtrl.js"></script>
+
+    <base href="/" />
+</head>
+
+
+<body ng-app="sample">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Sample</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-controller="sampleCtrl as ctrl">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Filter by Example</h2>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="filterBy" class="control-label col-md-1">Filter By</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" id="filterBy" ng-model="ctrl.filterBy" placeholder="Filter By">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>All entries:</h4>
+                    <ul>
+                        <li ng-repeat="entry in ctrl.array">{{entry.name}} </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Entries that contain an "{{ctrl.filterBy}}":</h4>
+                    <ul>
+                        <li ng-repeat="entry in ctrl.array | filter:ctrl.filterBy">{{entry.name}} </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Modal Example</h2>
+                    <button class="btn btn-primary" ng-click="ctrl.openSimpleModal()">Open Modal</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /container -->
+</body>
+
+</html>
