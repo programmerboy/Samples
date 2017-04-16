@@ -1,0 +1,7 @@
+﻿@using MVC.Models
+@using MVC.Helpers
+
+@{
+    var items = typeof(ItemDataType).GetItems((int?)Model);
+}
+@Html.DropDownList("",items) *

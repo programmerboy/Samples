@@ -4,7 +4,7 @@ namespace Samples.WebAPI.Helpers
 {
     public class MIMETypes
     {
-        public static Dictionary<string,string> GetOfficeMimeTypes()
+        public static Dictionary<string,string> GetAllMimeTypes()
         {
             Dictionary<string, string> mimeTypes = new Dictionary<string, string>();
 

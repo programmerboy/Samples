@@ -1,0 +1,8 @@
+﻿@using MVC.Models
+@using MVC.Helpers
+
+@{
+    var myString = CustomEnumHelper.DisplayEnumName(ViewData.ModelMetadata, (Enum)Model);
+    //var myString2 = typeof(Genre).DisplayEnumName((int?)Model) + " (F)";
+}
+<span class="btn btn-success">@Html.DisplayTextFor(model => myString)</span>

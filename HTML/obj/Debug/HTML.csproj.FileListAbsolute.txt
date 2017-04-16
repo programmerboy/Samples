@@ -6,5 +6,6 @@ C:\Users\oalhamid\Downloads\Samples-master\Samples-master\JavaScript\obj\Debug\J
 C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.dll.config
 C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.dll
 C:\Users\omair\Documents\GitHub\Samples\HTML\bin\JavaScript.pdb
+C:\Users\omair\Documents\GitHub\Samples\HTML\obj\Debug\HTML.csprojResolveAssemblyReference.cache
 C:\Users\omair\Documents\GitHub\Samples\HTML\obj\Debug\JavaScript.dll
 C:\Users\omair\Documents\GitHub\Samples\HTML\obj\Debug\JavaScript.pdb

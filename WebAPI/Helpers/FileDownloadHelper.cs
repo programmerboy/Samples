@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using NPOI.SS.UserModel;
+using System;
 
 namespace Samples.WebAPI.Helpers
 {
@@ -33,7 +34,7 @@ namespace Samples.WebAPI.Helpers
             _memoryStream.AllowClose = true;
             _memoryStream.Position = 0;
 
-            var _contentType = Miscellaneous.GetContentMIMEType(".xlsx");
+            var _contentType = Miscellaneous.GetMIMEType(".xlsx");
             //_contentType = "application/octet-stream";
             var _result = new HttpResponseMessage(HttpStatusCode.OK) { Content = new ByteArrayContent(_memoryStream.ToArray()) };
             _result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment") { FileName = fileName };
@@ -42,9 +43,9 @@ namespace Samples.WebAPI.Helpers
             return _result;
         }
 
-        public static HttpResponseMessage DownloadExcelFile(String _excelContent, string fileName)
+        public static HttpResponseMessage DownloadExcelFile(string _excelContent, string fileName)
         {
-            var _contentType = Miscellaneous.GetContentMIMEType(".xls");
+            var _contentType = Miscellaneous.GetMIMEType(".xls");
             var stream = new MemoryStream();
             var sw = new StreamWriter(stream);
             sw.Write(_excelContent);

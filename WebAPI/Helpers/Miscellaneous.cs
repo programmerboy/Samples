@@ -2,6 +2,7 @@
 using System.Data;
 using System.Web;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace Samples.WebAPI.Helpers
 {
@@ -31,6 +32,12 @@ namespace Samples.WebAPI.Helpers
             _jsonString = JsonConvert.SerializeObject(_dt, settings); //This method converts the data table into JSON string
             var _jsonObject = JsonConvert.DeserializeObject(_jsonString); //This method converts the converted string into JSON object
             return _jsonObject;
+        }
+
+        internal static string GetMIMEType(string extension)
+        {
+            var mime = MIMETypes.GetAllMimeTypes().Where(r => r.Key.Equals(extension)).FirstOrDefault().Value;
+            return mime;
         }
     }
 }

@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{8F6A27AE-8E14-4E30-B19E-3BFC0D06C881}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML", "HTML\HTML.csproj", "{BB6AED79-8B62-490A-BB49-60333C940B8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{AD4AFCC9-1830-4D5A-B1A8-CC46AE2779F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{D79958B9-608C-4D66-A57D-5663EBD1120B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{AD4AFCC9-1830-4D5A-B1A8-CC46AE2779F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4AFCC9-1830-4D5A-B1A8-CC46AE2779F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4AFCC9-1830-4D5A-B1A8-CC46AE2779F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79958B9-608C-4D66-A57D-5663EBD1120B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79958B9-608C-4D66-A57D-5663EBD1120B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79958B9-608C-4D66-A57D-5663EBD1120B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79958B9-608C-4D66-A57D-5663EBD1120B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

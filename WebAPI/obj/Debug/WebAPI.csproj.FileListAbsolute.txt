@@ -44,5 +44,6 @@ C:\Users\omair\Documents\GitHub\Samples\WebAPI\bin\System.Net.Http.Formatting.xm
 C:\Users\omair\Documents\GitHub\Samples\WebAPI\bin\System.Web.Http.xml
 C:\Users\omair\Documents\GitHub\Samples\WebAPI\bin\System.Web.Http.Cors.xml
 C:\Users\omair\Documents\GitHub\Samples\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\omair\Documents\GitHub\Samples\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\omair\Documents\GitHub\Samples\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\omair\Documents\GitHub\Samples\WebAPI\obj\Debug\WebAPI.pdb
