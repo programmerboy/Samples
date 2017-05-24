@@ -57,6 +57,20 @@ namespace Samples.WebAPI.Helpers
 
             return _result;
         }
+        
+        public static HttpResponseMessage DownloadExcelFile(XLWorkbook _wb, string fileName)
+        {
+            var _contentType = Miscellaneous.GetContentMIMEType(".xls");
+            var stream = new MemoryStream();
+            _wb.SaveAs(stream);
+            stream.Position = 0;
+
+            var _result = new HttpResponseMessage(HttpStatusCode.OK) { Content = new ByteArrayContent(stream.GetBuffer()) };
+            _result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment") { FileName = String.Format("{0}.xml", fileName) };
+            _result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/ms-excel");
+
+            return _result;
+        }
 
         public class NpoiMemoryStream : MemoryStream
         {
