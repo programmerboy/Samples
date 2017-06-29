@@ -53,10 +53,23 @@ namespace Samples.WebAPI.Helpers.Formatters
 
         public override MediaTypeFormatter GetPerRequestFormatterInstance(Type type, HttpRequestMessage request, MediaTypeHeaderValue mediaType)
         {
-            if (!request.Properties.ContainsKey("filename"))
-                return this;
-
-            this.FileName = request.Properties["filename"] as string;
+             //Usuage: In Controller Action:
+            //if (!Request.Properties.ContainsKey("filename"))
+            //Request.Properties.Add("filename", String.Format("SomeFileName_{0}.csv", DateTime.Now.ToString("yyyyMMdd-hhmmss")));
+            
+            if (request.Properties.ContainsKey("filename"))
+            {
+                FileName = request.Properties["filename"] as string;
+            }
+            else if (!String.IsNullOrWhiteSpace(FileName = request.GetQueryString("filename")))
+            {
+                FileName = FileName.CustomCompare(".csv") ? FileName : FileName + ".csv";
+            }
+            else
+            {
+                FileName = String.Format("Data-{0}.csv", DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+            }
+            
             return this;
         }
 
