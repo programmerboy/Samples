@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Http.ModelBinding;
+using System.Web.Http.ValueProviders;
+using Newtonsoft.Json;
+using TRIPS.WebAPI.DTO.CountAdmin;
+
+namespace TRIPS.WebAPI.Helpers.ModelBinders
+{
+    public class GETParametersMB : IModelBinder
+    {
+        public bool BindModel(System.Web.Http.Controllers.HttpActionContext actionContext, ModelBindingContext bindingContext)
+        {
+            if (bindingContext.ModelType != typeof(DTOGETParameter))
+            {
+                return false;
+            }
+
+            ValueProviderResult val = bindingContext.ValueProvider.GetValue(bindingContext.ModelName);
+            if (val == null)
+            {
+                return false;
+            }
+
+            string key = val.RawValue as string;
+            if (key == null)
+            {
+                bindingContext.ModelState.AddModelError(bindingContext.ModelName, "Wrong value type");
+                return false;
+            }
+            else
+            {
+                try
+                {
+                    DTOGETParameter _result = JsonConvert.DeserializeObject<DTOGETParameter>(key);
+                    bindingContext.Model = _result;
+                    return true;
+                }
+                catch (Exception)
+                {
+                    bindingContext.ModelState.AddModelError(bindingContext.ModelName, "Cannot convert value to DTOGETParameter");
+                    return false;
+                }
+            }//End of else
+        }//End of method
+    }
+}
